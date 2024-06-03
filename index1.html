@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .navbar {
+        display: flex;
+        /* border: 2px solid;/ */
+        width: 1440px;
+        height: 70px;
+        gap: 0px;
+        opacity: 0px;
+        margin-bottom: 13px;
+      }
+      .navbar div:nth-of-type(1) {
+        width: 32.47px;
+        height: 38.93px;
+        top: 14px;
+        left: 100px;
+        gap: 0px;
+        border-radius: 3px 0px 0px 0px;
+        opacity: 0.8px;
+        background-color: #7757f4;
+        margin-left: 100px;
+        margin-top: 14px;
+      }
+      .navbar div:nth-of-type(2) {
+        width: 29.93px;
+        height: 36.28px;
+        top: 14.22px;
+        left: 121.77px;
+        gap: 0px;
+        border-radius: 3px 0px 0px 0px;
+        opacity: 0.5px;
+        transform: skew(-14.99deg);
+        background-color: #ebe6fd;
+        margin-left: 12.31px;
+        margin-top: 14.22px;
+      }
+      .navbar div:nth-of-type(3) {
+        width: 115.74px;
+        height: 34.89px;
+        top: 19.84px;
+        left: 153.26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: open sans;
+        font-size: 23.43px;
+        font-weight: 700;
+        line-height: 35.15px;
+        text-align: left;
+      }
+      .navbar div:nth-of-type(4) > button {
+        width: 92px;
+        height: 44px;
+        top: 13px;
+        left: 1048px;
+        padding: 10px 5px 10px 0px;
+        gap: 2px;
+        border-radius: 10px;
+        /* border: 1px 0px 0px 0px; */
+        opacity: 0px;
+        border: 1px solid #7757f4;
+        color: #7757f4;
+        background-color: #ffff;
+        margin-left: 779px;
+        margin-top: 13px;
+      }
+      .navbar div:nth-of-type(5) > button {
+        width: 180px;
+        height: 44px;
+        top: 13px;
+        left: 1160px;
+        padding: 10px 5px 10px 0px;
+        gap: 2px;
+        border-radius: 10px;
+        opacity: 0px;
+        background-color: #7757f4;
+        color: #ffff;
+        margin-left: 20px;
+        margin-top: 13px;
+        margin-right: 100px;
+      }
+      hero {
+        display: flex;
+      }
+      .hero1 {
+        width: 554.15px;
+        height: 281.7px;
+        top: 232px;
+        left: 80px;
+        gap: 0px;
+        border-radius: 8px 0px 0px 0px;
+        opacity: 0px;
+        margin-left: 80px;
+        margin-top: 156px;
+      }
+      .hero1 p {
+        font-family: Open Sans;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 57.6px;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .hero1 button {
+        width: 165px;
+        height: Fixed 55.69px;
+        top: 458.01px;
+        left: 80px;
+        padding: 14.35px 6px 14.35px 6px;
+        gap: 2px;
+        border-radius: 10px;
+        opacity: 0px;
+        background-color: #7757f4;
+        color: #ffff;
+        /* font-family: Inter; */
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+      }
+      .hero2 {
+        display: flex;
+        width: 747px;
+        height: 426px;
+        top: 160px;
+        left: 613px;
+        padding: 0px 0.01px 0px 0px;
+        gap: 0px;
+        opacity: 0px;
+        margin-top: 84px;
+        margin-right: 80px;
+      }
+
+      .hero2 div:nth-of-type(1) {
+        width: 192.04px;
+        height: 128.5px;
+        top: 251.35px;
+        gap: 0px;
+        border-radius: 3.53px 0px 0px 0px;
+        opacity: 0.9px;
+        border: 2px solid black;
+        z-index: 1;
+        margin-top: 254.75px;
+      }
+      .hero2 div:nth-of-type(2) {
+        margin-top: 38.4px;
+        margin-left: 104px;
+        position: absolute;
+      }
+      .hero2 div:nth-of-type(3) {
+        width: 140.5px;
+        height: 185.69px;
+        left: 577.54px;
+        gap: 0px;
+        border-radius: 7.89px 0px 0px 0px;
+        opacity: 0px;
+        border: 2px purple solid;
+        z-index: 1;
+        margin-left: 472px;
+        background-color: aliceblue;
+      }
+      .hero2 div:nth-of-type(3) p {
+        margin-left: 30px;
+      }
+      .hero2:hover {
+        transform: scale(1.5);
+        transition: 2s ease-out;
+      }
+      /* .color {
+        background-color: #ffff;
+        box-shadow: 0px 0px 7.52px 0px #0000000d;
+        display: flex;
+        flex-direction: row;
+      } */
+      /* .color div{
+        margin-top: 9.21px;
+        width: 27.33px;
+        height: 27.27px;
+        top: 281.69px;
+        left: 12.3px;
+        gap: 0px;
+        border: 1.79px 0px 0px 0px;
+        opacity: 0px;
+        border-radius: 50%;
+      } */
+      /* .color div:nth-of-type(1){
+        background: #f7a9a7;
+      }
+      .hero2 .color div:nth-of-type(2){
+        background: #7BC896;
+
+      } */
+      .container {
+        display: flex;
+      }
+      h3 {
+        width: 580px;
+        height: 46px;
+        margin-top: 90px;
+        margin-left: 100px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Open Sans;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 45.6px;
+        text-align: left;
+      }
+      .container div:nth-of-type(1) {
+        width: 143px;
+        height: 79px;
+        margin-top: 100px;
+        margin-left: 50px;
+        gap: 0px;
+        border-radius: 80px 0px 0px 0px;
+        opacity: 0px;
+        transform: rotate(180deg);
+        background-color: #d7efdf;
+      }
+      .container div:nth-of-type(2) {
+        width: 450px;
+        height: 460px;
+        top: 770px;
+        margin-left: 340px;
+        gap: 0px;
+        border-radius: 0px 0px 20px 0px;
+        border: 0.5px 0px 0px 0px;
+        opacity: 0px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div></div>
+        <div></div>
+        <div><p>Resume.AI</p></div>
+        <div><button>Sign In</button></div>
+        <div><button>Create My Resume</button></div>
+      </div>
+    </nav>
+    <hero>
+      <div class="hero1">
+        <p>
+          Welcome to
+          <span style="color: #7757f4"
+            >AI Resume <br />
+            Maker !
+          </span>
+          Your path to professional success !
+        </p>
+        <button>Start building</button>
+      </div>
+      <div class="hero2">
+        <div class="color">
+          <p>Colors</p>
+          <!-- <div></div> -->
+          <!-- <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div> -->
+        </div>
+        <div>
+          <img src="Professional Summary 2.png" alt="" />
+        </div>
+        <div>
+          <p
+            style="
+              width: 29.88px;
+              height: 16.6px;
+              top: 16.6px;
+              left: 593.78px;
+              gap: 0px;
+              opacity: 0px;
+              font-family: open sans;
+              font-size: 11.3px;
+              font-weight: 600;
+              line-height: 13.56px;
+              text-align: left;
+            "
+          >
+            Font
+          </p>
+          <p>Open Sans</p>
+          <p>Rubik</p>
+          <p>Inter</p>
+          <p>Montserrat</p>
+        </div>
+      </div>
+    </hero>
+    <h3>Why choose AI resume maker?</h3>
+    <div class="container">
+      <img
+        style="
+          margin-left: 124px;
+          width: 130px;
+          height: 185px;
+          margin-top: 60px;
+          opacity: 0px;
+        "
+        src="Template-3 2.png"
+        alt=""
+      />
+      <img
+        style="width: 223px; height: 317px; margin-top: 10px; opacity: 0px"
+        src="Template-4@2x.png"
+        alt=""
+      />
+      <div></div>
+      <div>
+        <p
+          style="
+            font-family: open sans;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            margin-left: 105px;
+          "
+        >
+          Real Time Preview
+        </p>
+        <p
+          style="
+            font-family: open sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: left;
+            color: #525252;
+            margin-left: 105px;
+          "
+        >
+          Preview the resumes real-time while adding the details.
+        </p>
+        <p
+          style="
+            font-family: open sans;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            margin-left: 105px;
+          "
+        >
+          Templates Library
+        </p>
+        <p
+          style="
+            font-family: open sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: left;
+            color: #525252;
+            margin-left: 105px;
+          "
+        >
+          Select from a wide range of templates that suits your professional
+          needs.
+        </p>
+        <p
+          style="
+            font-family: open sans;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            margin-left: 105px;
+          "
+        >
+          Dynamic Content Generation
+        </p>
+        <p
+          style="
+            font-family: open sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: left;
+            color: #525252;
+            margin-left: 105px;
+          "
+        >
+          Automatically creates content based on your inputs.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
